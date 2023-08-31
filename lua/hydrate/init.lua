@@ -19,7 +19,7 @@ function M.setup(options)
 
 	local function info(message)
 		vim.notify(message, vim.log.levels.INFO, {
-			title = "hydrate.nvim",
+			title = "Hydrate",
 			render = options.render_style,
 			timeout = 2000,
 		})
@@ -27,7 +27,7 @@ function M.setup(options)
 
 	local function on_timer()
 		vim.notify(" 💧 Time for a drink ", vim.log.levels.WARN, {
-			title = "hydrate.nvim",
+			title = "Hydrate",
 			render = options.render_style,
 			timeout = false,
 			on_open = function()
